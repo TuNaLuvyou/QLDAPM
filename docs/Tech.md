@@ -13,7 +13,7 @@
 | **Frontend (Web Portal)** | **Next.js** | React 19, Next.js 16 App Router, Tailwind CSS v4, Font Awesome | Cổng quản trị web trực quan cho Ban giám đốc, HR, Quản lý chi nhánh, Kế toán |
 | **Backend Services** | **Express (Node.js)** | Express 4.x, Node.js >= 18, Clean Architecture, RESTful API & SOAP | Cung cấp các micro-service nghiệp vụ độc lập (Identity, Organization, Work, Payroll, Integration, Gateway) |
 | **Authentication** | **JWT native** | JSON Web Token (Access Token & Refresh Token) | Cơ chế xác thực phi tập trung, phân quyền Role-Based Access Control (RBAC) |
-| **Database** | **PostgreSQL** | Relational Database (RDBMS), ACID compliant | Lưu trữ dữ liệu quan hệ doanh nghiệp, cam kết toàn vẹn dữ liệu, hỗ trợ transaction |
+| **Database** | **PostgreSQL (Supabase)** | Relational Database (RDBMS), ACID compliant | Lưu trữ dữ liệu quan hệ doanh nghiệp, cam kết toàn vẹn dữ liệu, hỗ trợ transaction |
 | **ORM** | **Prisma** | Prisma Client, Prisma Migrate, Type-safe Query Builder | Khai báo schema tập trung, tự động migration, ánh xạ quan hệ cơ sở dữ liệu |
 | **Mobile App** | **Flutter (Đạt)**, **React-Native (Hoàng)** | - **Flutter (Đạt)**: Dart 3.x, Material 3, `go_router`<br>- **React-Native (Hoàng)**: Nền tảng do Hoàng phụ trách | Ứng dụng di động đa nền tảng cho nhân viên chấm công, xem ca, duyệt đơn, nhận phiếu lương |
 
@@ -53,8 +53,8 @@
   - Stateless Verification: API Gateway và các Service nội bộ xác thực chữ ký số bằng khóa bí mật (`JWT_SECRET`) mà không cần truy vấn DB liên tục.
   - Cookie Session: Web Frontend lưu trữ session cookie an toàn (`hrm-session`).
 
-### 2.4. Database: PostgreSQL
-- **Hệ quản trị**: PostgreSQL (bản mới nhất).
+### 2.4. Database: PostgreSQL (Supabase)
+- **Hệ quản trị**: PostgreSQL (Supabase cloud / on-premises database instance).
 - **Mô hình triển khai**: Single-tenant On-Premises (hệ thống cài đặt nội bộ cho một doanh nghiệp duy nhất, không dùng `tenantId`).
 - **Ưu điểm**:
   - Tuân thủ nghiêm ngặt chuẩn ACID, bảo đảm an toàn dữ liệu số dư và các giao dịch lương.
