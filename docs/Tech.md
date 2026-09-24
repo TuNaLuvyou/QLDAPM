@@ -95,7 +95,7 @@ Phần ứng dụng di động trong môn QLDAPM được triển khai/nghiên c
 
 ## 4. Các mẫu kiến trúc áp dụng (Architectural Patterns)
 
-> Phần này đối chiếu trực tiếp với nội dung giảng dạy môn **INT1448 — Phát triển phần mềm hướng dịch vụ** (CLO1, CLO2).
+> Phần này đối chiếu trực tiếp với mục tiêu và chuẩn kiến trúc của môn **Quản lý dự án phần mềm (QLDAPM)**.
 
 ### 4.1. IPC — Giao tiếp giữa các dịch vụ (Tuần 6)
 - Tất cả giao tiếp cross-service đi qua `src/infrastructure/external-clients/` bằng **HTTP REST** (timeout tối đa 5000ms).
