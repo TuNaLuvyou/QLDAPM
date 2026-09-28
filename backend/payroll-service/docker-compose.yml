@@ -1,0 +1,10 @@
+services:
+  payroll-service:
+    build: .
+    ports:
+      - "4004:4004"
+    env_file:
+      - .env
+    environment:
+      - PORT=4004
+      - SERVICE_NAME=payroll-service
