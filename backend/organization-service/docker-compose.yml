@@ -1,0 +1,10 @@
+services:
+  organization-service:
+    build: .
+    ports:
+      - "4002:4002"
+    env_file:
+      - .env
+    environment:
+      - PORT=4002
+      - SERVICE_NAME=organization-service
