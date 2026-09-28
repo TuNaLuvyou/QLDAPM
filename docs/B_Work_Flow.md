@@ -203,3 +203,12 @@ Các mục sau không có trong tài liệu phân công gốc:
 5. Sau mỗi thay đổi, kiểm tra `GET /health` và chạy test của service (`tests/`).
 6. Khi báo kết quả, nói rõ đã chạy lệnh nào và kết quả ra sao. Không báo "pass" khi chưa chạy.
 7. Ưu tiên theo thứ tự: organization-service (mốc 1) trước, rồi payroll-service (mốc 2).
+
+---
+
+## 11. Tiến độ B (lộ trình 20 commits — nhánh `feat/backend-B` → PR về `dev`)
+
+- [x] C1 scaffold organization-service :4002 + health — commit `7636212`
+- [x] C2 scaffold payroll-service :4004 + health — commit `c5efbc2`
+- PR: `feat/backend-B` → `dev` (gộp C1+C2), test 3/3 pass mỗi service, `GET /health` ok
+- [ ] C3+ CRUD branches/departments/employees, payouts idempotent, payslips (tiếp theo)
